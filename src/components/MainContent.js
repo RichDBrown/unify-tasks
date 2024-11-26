@@ -2,10 +2,10 @@ import CreateTaskCard from "./CreateTaskCard";
 import '../styles/mainContent.css'
 import TaskCard from "./TaskCard";
 
-function MainContent() {
+function MainContent({ createCardDescription }) {
   return (
     <div className="main-content">
-      <CreateTaskCard />
+      <CreateTaskCard createCardDescription={createCardDescription} />
       <TaskCard />
       <TaskCard />
       <TaskCard />

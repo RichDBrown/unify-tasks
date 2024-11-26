@@ -24,13 +24,9 @@
   text-decoration: none;
 }
 
-.nav-button:hover {
+.nav-button:hover, .nav-button.active{
   background-color: #dad9e0;
   cursor: pointer;
-}
-
-#todo-button {
-  background-color: #dad9e0;
 }
 
 .nav-icon {

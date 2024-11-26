@@ -3,8 +3,7 @@ import MainContent from "../components/MainContent";
 import NavBar from "../components/NavBar";
 import '../styles/todoPage.css'
 
-
-function TodoPage() {
+function JournalPage() {
   return (
     <>
       <Header />
@@ -12,10 +11,10 @@ function TodoPage() {
         <aside>
           <NavBar />
         </aside>
-        <MainContent createCardDescription="Create Todo" />
+        <MainContent createCardDescription="Create Journal"/>
       </main>
     </>
   )
 }
 
-export default TodoPage;
+export default JournalPage;
