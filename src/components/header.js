@@ -1,10 +1,10 @@
 import '../styles/header.css';
 
-function Header() {
+function Header({ toggleMenu }) {
   return (
     <header className="header">
       <nav className="left">
-        <button className='header-button' aria-label="Open Menu">
+        <button className='header-button' aria-label="Open Menu" onClick={toggleMenu}>
           <img src='/icons/horizontal-menu.svg' alt="Menu" className='header-icon'></img>
         </button>
         <a className='logo-background'>

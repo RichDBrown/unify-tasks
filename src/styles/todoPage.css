@@ -1,5 +1,40 @@
+.header-view {
+  width: 100%;
+  height: 9rem;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+.aside-view {
+  position: fixed;
+  left: 0;
+  top: calc(9rem - 1px);
+  height: 100%;
+  width: 9rem;
+  z-index: 100;
+}
+
+.aside-view.slide-in {
+  left: 0;
+}
+
+.aside-view.slide-out {
+  left: -9rem;
+}
+
 .main-view {
   width: 100%;
   height: 100%;
   padding-top: 9rem;
+  padding-left: 9rem;
+  transition: padding-left 0.2s ease-in-out;
+}
+
+.main-view.contract {
+  padding-left: 9rem;
+}
+
+.main-view.expand {
+  padding-left: 0;
 }

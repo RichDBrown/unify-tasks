@@ -4,14 +4,16 @@ import NavBar from "../components/NavBar";
 import '../styles/todoPage.css'
 
 
-function TodoPage() {
+function TodoPage({ isMenuOpen, toggleMenu }) {
   return (
     <>
-      <Header />
-      <main className="main-view">
-        <aside>
-          <NavBar />
-        </aside>
+      <header className="header-view">
+        <Header toggleMenu={toggleMenu} />
+      </header>
+      <aside className={`aside-view ${isMenuOpen ? "slide-in" : "slide-out"}`}>
+        <NavBar isMenuOpen={isMenuOpen} />
+      </aside>
+      <main className={`main-view ${isMenuOpen ? "contract" : "expand"}`}>
         <MainContent createCardDescription="Create Todo" />
       </main>
     </>

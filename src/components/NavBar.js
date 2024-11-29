@@ -1,10 +1,11 @@
 import '../styles/navBar.css';
 import { Link, useLocation } from "react-router-dom";
 
-function NavBar() {
-
+function NavBar({ isMenuOpen }) {
   return (
-    <nav className="navigation" aria-label="Main Navigation">
+    <nav
+      className={`navigation ${isMenuOpen ? "slide-in" : "slide-out"}`}
+      aria-label="Main Navigation">
       <Link
         className={`nav-button ${useLocation().pathname === "/TodoPage" ? "active" : ""}`}
         aria-label="Go to Todo Section"
