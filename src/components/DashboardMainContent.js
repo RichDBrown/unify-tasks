@@ -1,11 +1,11 @@
 import CreateTaskCard from "./CreateTaskCard";
-import '../styles/mainContent.css'
+import '../styles/dashboardMainContent.css'
 import TaskCard from "./TaskCard";
 
-function MainContent({ createCardDescription }) {
+function DashboardMainContent({ createCardDescription, linkToPage }) {
   return (
-    <div className="main-content">
-      <CreateTaskCard createCardDescription={createCardDescription} />
+    <div className="dashboard-main-content">
+      <CreateTaskCard createCardDescription={createCardDescription} linkToPage={linkToPage}/>
       <TaskCard />
       <TaskCard />
       <TaskCard />
@@ -30,4 +30,4 @@ function MainContent({ createCardDescription }) {
   )
 }
 
-export default MainContent;
+export default DashboardMainContent;

@@ -1,11 +1,12 @@
 import '../styles/createTaskCard.css'
+import { Link} from "react-router-dom";
 
-function CreateTaskCard({ createCardDescription }) {
+function CreateTaskCard({ createCardDescription, linkToPage }) {
   return (
-    <a className='card' aria-label='Create a new todo'>
+    <Link className='card' aria-label='Create a new todo' to={linkToPage}>
       <img className='icon' src='/icons/create-icon.svg' alt='Create todo icon'></img>
       <span className='create-card-description'>{createCardDescription}</span>
-    </a>
+    </Link>
   )
 }
 

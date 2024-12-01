@@ -1,22 +1,22 @@
-import Header from "../components/Header";
-import MainContent from "../components/MainContent";
+import DashboardHeader from "../components/DashboardHeader";
+import DashboardMainContent from "../components/DashboardMainContent";
 import NavBar from "../components/NavBar";
 import '../styles/todoPage.css'
 
-function JournalPage({ isMenuOpen, toggleMenu }) {
+function JournalDashboard({ isMenuOpen, toggleMenu }) {
   return (
     <>
       <header className="header-view">
-        <Header toggleMenu={toggleMenu} />
+        <DashboardHeader toggleMenu={toggleMenu} />
       </header>
       <aside className={`aside-view ${isMenuOpen ? "slide-in" : "slide-out"}`}>
         <NavBar isMenuOpen={isMenuOpen} />
       </aside>
       <main className={`main-view ${isMenuOpen ? "contract" : "expand"}`}>
-        <MainContent createCardDescription="Create Journal" />
+        <DashboardMainContent createCardDescription="Create Journal" />
       </main>
     </>
   )
 }
 
-export default JournalPage;
+export default JournalDashboard;

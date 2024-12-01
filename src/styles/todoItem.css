@@ -1,0 +1,22 @@
+.todo-item {
+  display: flex;
+  align-items: top;
+  justify-content: first baseline;
+  padding: 0rem 0rem .25rem 0rem;
+}
+
+.checkbox {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+
+.text-input {
+  width: calc(100% - 2rem);
+  font-size: 1.75rem;
+  border: none;
+  overflow: hidden;
+  outline: none;
+  resize: none;
+  padding: 0;
+}

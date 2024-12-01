@@ -33,7 +33,7 @@
   background-color: #dad9e0;
 }
 
-.header-icon{
+.header-icon {
   height: 3rem;
   width: 3rem;
   cursor: pointer;
@@ -47,7 +47,7 @@
   text-decoration: none;
 }
 
-.logo-background:active #app-name{
+.logo-background:active #app-name {
   text-decoration: underline;
 }
 
@@ -64,12 +64,34 @@
 
 .middle {
   flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  height: 3rem;
+  width: 19.2rem;
+  font-size: 2rem;
+  justify-self: center;
+  border: none;
+  outline: none;
+  transition: border 0.15s;
+  text-align: center;
+  padding: 0;
+  line-height: 3rem;
+}
+
+.title:hover,
+.title:focus {
+  border: 1px solid black;
+  border-radius: 1rem;
 }
 
 .right {
   display: flex;
   align-items: center;
   margin-right: 3rem;
+  margin-left: 1.668rem;
 }
 
 .btn-outline-primary {
@@ -81,8 +103,36 @@
   margin-left: 1rem;
 }
 
-.btn-outline-primary:hover, .btn-outline-primary:active {
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
   color: white;
   background-color: #485d92 !important;
   border-color: #485d92 !important;
+}
+
+@media (max-width: 360px) {
+  #dashboard-header-logo-background {
+    display: none;
+  }
+}
+
+@media (max-width: 522px) {
+
+  #file-header-logo-background,
+  #help-button,
+  #notifications-button {
+    display: none;
+  }
+
+  .right {
+    margin-left: 0 !important;
+  }
+
+  #sign-in-button {
+    margin-left: 0 !important;
+  }
+
+  .left {
+    margin-right: 3.400375rem;
+  }
 }

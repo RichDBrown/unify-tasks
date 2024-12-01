@@ -3,7 +3,7 @@
   flex-direction: column;
   position: fixed;
   left: 0;
-  top: calc(9rem - 1px);
+  top: calc(9rem - .125rem);
   height: 100%;
   width: 9rem;
   border-right: 1px solid rgb(222, 222, 222);

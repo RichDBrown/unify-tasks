@@ -1,20 +1,18 @@
-import Header from "../components/Header";
-import MainContent from "../components/MainContent";
+import FileHeader from "../components/FileHeader";
 import NavBar from "../components/NavBar";
-import '../styles/todoPage.css'
-
+import TodoMainContent from "../components/TodoMainContent";
 
 function TodoPage({ isMenuOpen, toggleMenu }) {
   return (
     <>
-      <header className="header-view">
-        <Header toggleMenu={toggleMenu} />
+      <header>
+        <FileHeader toggleMenu={toggleMenu} />
       </header>
       <aside className={`aside-view ${isMenuOpen ? "slide-in" : "slide-out"}`}>
         <NavBar isMenuOpen={isMenuOpen} />
       </aside>
       <main className={`main-view ${isMenuOpen ? "contract" : "expand"}`}>
-        <MainContent createCardDescription="Create Todo" />
+        <TodoMainContent />
       </main>
     </>
   )

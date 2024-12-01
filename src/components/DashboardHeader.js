@@ -1,13 +1,13 @@
 import '../styles/header.css';
 
-function Header({ toggleMenu }) {
+function DashboardHeader({ toggleMenu }) {
   return (
     <header className="header">
       <nav className="left">
         <button className='header-button' aria-label="Open Menu" onClick={toggleMenu}>
           <img src='/icons/horizontal-menu.svg' alt="Menu" className='header-icon'></img>
         </button>
-        <a className='logo-background'>
+        <a className='logo-background' id='dashboard-header-logo-background'>
           <img src='/icons/unify-tasks-logo.svg' alt="UnifyTasks Logo" id='logo'></img>
           <span id='app-name'>UnifyTasks</span>
         </a>
@@ -26,4 +26,4 @@ function Header({ toggleMenu }) {
   )
 }
 
-export default Header;
+export default DashboardHeader;
