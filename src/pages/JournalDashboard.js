@@ -13,7 +13,7 @@ function JournalDashboard({ isMenuOpen, toggleMenu }) {
         <NavBar isMenuOpen={isMenuOpen} />
       </aside>
       <main className={`main-view ${isMenuOpen ? "contract" : "expand"}`}>
-        <DashboardMainContent createCardDescription="Create Journal" />
+        <DashboardMainContent createCardDescription="Create Journal" linkToPage={"/JournalPage"}/>
       </main>
     </>
   )
