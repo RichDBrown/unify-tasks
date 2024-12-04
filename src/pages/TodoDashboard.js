@@ -1,7 +1,7 @@
 import DashboardHeader from "../components/DashboardHeader";
 import DashboardMainContent from "../components/DashboardMainContent";
 import NavBar from "../components/NavBar";
-import '../styles/todoPage.css'
+import '../styles/dashboard.css'
 
 
 function TodoDashboard({ isMenuOpen, toggleMenu }) {
