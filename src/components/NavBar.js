@@ -14,13 +14,6 @@ function NavBar({ isMenuOpen }) {
         <span className='button-description'>Todo</span>
       </Link>
       <Link
-        className={`nav-button ${useLocation().pathname === "/BrainstormDashboard" ? "active" : ""}`}
-        aria-label="Go to Brainstorm Section"
-        to="/BrainstormDashboard">
-        <img src="/icons/brainstorm-icon.svg" className='nav-icon' alt="Brainstorm icon"></img>
-        <span className='button-description'>Brainstorm</span>
-      </Link>
-      <Link
         className={`nav-button ${useLocation().pathname === "/JournalDashboard" ? "active" : ""}`}
         aria-label="Go to Journal Section"
         to="/JournalDashboard">

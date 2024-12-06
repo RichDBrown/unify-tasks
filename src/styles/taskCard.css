@@ -1,20 +1,83 @@
-.content-view {
+.task-card {
+  display: flex;
+  background-color: white;
+  border: .125rem solid #757780;
+  border-radius: 1rem;
+  aspect-ratio: 1 / 1.25;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.task-card:hover {
+  border: .375rem solid #485d92;
+
+  .task-card-description {
+    padding: calc(1rem - .25rem);
+  }
+
+  .delete-button-container {
+    margin-top: -.25rem;
+    margin-right: -.375rem;
+  }
+
+  .task-card-icon{
+    margin-top: -.25rem;
+  }
+}
+
+.delete-button-container {
+  display: flex;
   width: 100%;
-  height: calc(100% - 7rem);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.task-card-icon {
+  width: 6rem;
+  height: 6rem;
 }
 
 .task-card-description {
   display: flex;
   width: 100%;
-  height: 7rem;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 1rem;
 }
 
 .task-title {
   font-size: 2rem;
-  padding-bottom: 1rem;
+}
+
+#rename-button {
+  margin-bottom: -1rem;
+  margin-right: -1rem;
+}
+
+@media (hover: none) {
+  .task-card:hover {
+    border: .125rem solid #757780;
+  }
+
+  .task-card:active {
+    border: .375rem solid #485d92;
+
+  .task-card-description {
+    padding: calc(1rem - .25rem);
+  }
+
+  .delete-button-container {
+    margin-top: -.25rem;
+    margin-right: -.375rem;
+  }
+
+  .task-card-icon{
+    margin-top: -.25rem;
+  }
+  }
 }

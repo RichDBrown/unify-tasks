@@ -1,6 +1,8 @@
 import FileHeader from "../components/FileHeader";
 import NavBar from "../components/NavBar";
+import SignInToSave from "../components/SignInToSave";
 import TodoMainContent from "../components/TodoMainContent";
+import '../styles/pages.css'
 
 function TodoPage({ isMenuOpen, toggleMenu }) {
   return (
@@ -13,6 +15,7 @@ function TodoPage({ isMenuOpen, toggleMenu }) {
       </aside>
       <main className={`main-view ${isMenuOpen ? "contract" : "expand"}`}>
         <TodoMainContent />
+        <SignInToSave />
       </main>
     </>
   )

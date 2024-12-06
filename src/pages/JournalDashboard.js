@@ -12,8 +12,8 @@ function JournalDashboard({ isMenuOpen, toggleMenu }) {
       <aside className={`aside-view ${isMenuOpen ? "slide-in" : "slide-out"}`}>
         <NavBar isMenuOpen={isMenuOpen} />
       </aside>
-      <main className={`main-view ${isMenuOpen ? "contract" : "expand"}`}>
-        <DashboardMainContent createCardDescription="Create Journal" linkToPage={"/JournalPage"}/>
+      <main className={`main-view-dashboard ${isMenuOpen ? "contract" : "expand"}`}>
+        <DashboardMainContent createCardDescription="Create Journal" linkToPage={"/JournalPage"} icon={'icons/journal-icon.svg'}/>
       </main>
     </>
   )

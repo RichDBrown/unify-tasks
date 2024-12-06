@@ -1,7 +1,7 @@
-.card {
+.create-task-card {
   display: flex;
   background-color: white;
-  border: 1px solid black;
+  border: .125rem solid #757780;
   border-radius: 1rem;
   aspect-ratio: 1 / 1.25;
   flex-direction: column;
@@ -11,17 +11,18 @@
   text-decoration: none;
 }
 
-.card:hover {
-  border: 3px solid #485d92;
+.create-task-card:hover {
+  border: .375rem solid #485d92;
 }
 
 .icon {
   width: 6rem;
   height: 6rem;
   margin-bottom: 1.5rem;
+  margin-top: 4.5rem;
 }
 
 .create-card-description {
   font-size: 2rem;
-  color: black;
+  color: #1a1b21;
 }

@@ -1,0 +1,24 @@
+.notice-container {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: #dce2f9;
+  border-radius: .375rem;
+  padding: .5rem;
+  border: .125rem solid #757780;
+  right: 3rem;
+  bottom: 3rem;
+}
+
+.info-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: .5rem;
+}
+
+.notice {
+  color: #151b2c;
+  font-size: 1.5rem;
+  cursor: default;
+}

@@ -1,6 +1,7 @@
 import JournalMainContent from "../components/JournalMainContent";
 import FileHeader from "../components/FileHeader";
 import NavBar from "../components/NavBar";
+import SignInToSave from "../components/SignInToSave";
 
 function JournalPage({ isMenuOpen, toggleMenu }) {
   return (
@@ -13,6 +14,7 @@ function JournalPage({ isMenuOpen, toggleMenu }) {
       </aside>
       <main className={`main-view ${isMenuOpen ? "contract" : "expand"}`}>
         <JournalMainContent />
+        <SignInToSave />
       </main>
     </>
   )

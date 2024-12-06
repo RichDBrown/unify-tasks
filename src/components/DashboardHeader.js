@@ -1,5 +1,5 @@
 import '../styles/header.css';
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function DashboardHeader({ toggleMenu }) {
   return (
@@ -15,12 +15,6 @@ function DashboardHeader({ toggleMenu }) {
       </nav>
       <div className="middle"></div>
       <nav className="right">
-        <button className='header-button' aria-label="Help">
-          <img src='/icons/help-icon.svg' alt="Notifications" className='header-icon'></img>
-        </button>
-        <a className='header-button' aria-label="View Notifications">
-          <img src='/icons/notification-icon.svg' alt="Notifications" className='header-icon'></img>
-        </a>
         <button type="button" class="btn btn-outline-primary">Sign In</button>
       </nav>
     </header>

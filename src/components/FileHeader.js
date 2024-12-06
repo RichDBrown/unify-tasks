@@ -1,4 +1,4 @@
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function FileHeader({ toggleMenu }) {
   return (
@@ -16,12 +16,6 @@ function FileHeader({ toggleMenu }) {
         <input type="text" placeholder="Enter title here" className="title"></input>
       </div>
       <nav className="right">
-        <button className='header-button' aria-label="Help" id="help-button">
-          <img src='/icons/help-icon.svg' alt="Notifications" className='header-icon'></img>
-        </button>
-        <a className='header-button' aria-label="View Notifications" id="notifications-button">
-          <img src='/icons/notification-icon.svg' alt="Notifications" className='header-icon'></img>
-        </a>
         <button type="button" class="btn btn-outline-primary" id="sign-in-button">Sign In</button>
       </nav>
     </header>
