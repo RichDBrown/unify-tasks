@@ -1,0 +1,29 @@
+#sign-in-card {
+  display: flex;
+  flex-direction: column;
+  border: .125rem solid black;
+  padding: 2rem;
+}
+
+.sign-in-card-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sign-in-up-input {
+  font-size: 1.75rem;
+  margin-bottom: .75rem;
+  border-radius: .375rem;
+  border: .125rem solid black;
+}
+
+.sign-in-up-button {
+  margin-top: 1rem;
+  font-size: 1.75rem;
+  border-radius: .375rem;
+  border: .125rem solid black;
+}
+
+#sign-in-card-divider {
+  margin: 2rem 0;
+}

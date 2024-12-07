@@ -16,7 +16,9 @@ function FileHeader({ toggleMenu }) {
         <input type="text" placeholder="Enter title here" className="title"></input>
       </div>
       <nav className="right">
-        <button type="button" class="btn btn-outline-primary" id="sign-in-button">Sign In</button>
+        <Link to='/SignInPage'>
+          <button type="button" class="btn btn-outline-primary" id="sign-in-button">Sign In</button>
+        </Link>
       </nav>
     </header>
   )

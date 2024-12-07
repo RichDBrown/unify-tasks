@@ -15,7 +15,9 @@ function DashboardHeader({ toggleMenu }) {
       </nav>
       <div className="middle"></div>
       <nav className="right">
-        <button type="button" class="btn btn-outline-primary">Sign In</button>
+        <Link to='/SignInPage'>
+          <button type="button" class="btn btn-outline-primary">Sign In</button>
+        </Link>
       </nav>
     </header>
   )

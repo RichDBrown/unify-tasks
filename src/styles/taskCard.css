@@ -11,23 +11,12 @@
   cursor: pointer;
   text-decoration: none;
   color: black;
+  box-sizing: border-box;
 }
 
 .task-card:hover {
-  border: .375rem solid #485d92;
-
-  .task-card-description {
-    padding: calc(1rem - .25rem);
-  }
-
-  .delete-button-container {
-    margin-top: -.25rem;
-    margin-right: -.375rem;
-  }
-
-  .task-card-icon{
-    margin-top: -.25rem;
-  }
+  border-color: #485d92;
+  box-shadow: 0 0 10px rgba(72, 93, 146, 0.5);
 }
 
 .delete-button-container {
@@ -61,23 +50,11 @@
 
 @media (hover: none) {
   .task-card:hover {
-    border: .125rem solid #757780;
+    border-color: #757780;
   }
 
   .task-card:active {
-    border: .375rem solid #485d92;
-
-  .task-card-description {
-    padding: calc(1rem - .25rem);
-  }
-
-  .delete-button-container {
-    margin-top: -.25rem;
-    margin-right: -.375rem;
-  }
-
-  .task-card-icon{
-    margin-top: -.25rem;
-  }
+    border-color: #485d92;
+    box-shadow: 0 0 10px rgba(72, 93, 146, 0.5);
   }
 }

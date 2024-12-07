@@ -4,6 +4,7 @@ import JournalDashboard from "./pages/JournalDashboard";
 import { useState } from 'react';
 import TodoPage from "./pages/TodoPage";
 import JournalPage from "./pages/JournalPage";
+import SignInPage from "./pages/SignInPage";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(true)
@@ -20,7 +21,7 @@ function App() {
         <Route path="/JournalDashboard" element={<JournalDashboard isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />} />
         <Route path="/TodoPage" element={<TodoPage isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />} />
         <Route path="/JournalPage" element={<JournalPage isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />} />
-        <Route path="/SignInPage" element={<JournalPage isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />} />
+        <Route path="/SignInPage" element={<SignInPage isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />} />
       </Routes>
     </BrowserRouter>
   )

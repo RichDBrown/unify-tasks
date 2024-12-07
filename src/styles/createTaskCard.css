@@ -12,7 +12,8 @@
 }
 
 .create-task-card:hover {
-  border: .375rem solid #485d92;
+  border-color: #485d92;
+  box-shadow: 0 0 10px rgba(72, 93, 146, 0.5);
 }
 
 .icon {
