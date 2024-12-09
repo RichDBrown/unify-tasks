@@ -10,14 +10,14 @@
   margin-bottom: 2rem;
 }
 
-.sign-in-up-input {
+.sign-in-input {
   font-size: 1.75rem;
   margin-bottom: .75rem;
   border-radius: .375rem;
   border: .125rem solid black;
 }
 
-.sign-in-up-button {
+.sign-in-button {
   margin-top: 1rem;
   font-size: 1.75rem;
   border-radius: .375rem;

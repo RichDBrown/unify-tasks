@@ -1,7 +1,7 @@
-import '../styles/journalMainContent.css'
-import { useState, useRef } from "react"
+import '../styles/journalTaskMainContent.css'
+import { useRef } from "react"
 
-function JournalMainContent() {
+function JournalTaskMainContent() {
   const textareaRef = useRef(null);
 
   const handleInput = () => {
@@ -11,9 +11,9 @@ function JournalMainContent() {
   }
 
   return (
-    <div className="journal-main-content">
+    <div id="journal-task-main-content">
       <textarea 
-      className="journal-input"
+      id="journal-input"
       ref={textareaRef}
       onInput={handleInput}
       placeholder='Start your journal entry here...'/>
@@ -21,4 +21,4 @@ function JournalMainContent() {
   )
 }
 
-export default JournalMainContent
+export default JournalTaskMainContent

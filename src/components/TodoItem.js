@@ -21,16 +21,15 @@ function TodoItem({ task, isFirst, onTextChange, onCheckboxChange, onEnter, onBa
   }
 
   return (
-    <div className="todo-item">
+    <div id="todo-item-container">
       <input
-        className="checkbox"
+        id="todo-item-checkbox"
         type="checkbox"
         checked={task.isChecked}
-        onChange={onCheckboxChange}
-        aria-label="Mark as completed" />
+        onChange={onCheckboxChange} />
       <textarea
         ref={inputRef}
-        className="text-input"
+        id="todo-item-input"
         value={task.text}
         onInput={handleTextChange}
         onKeyDown={handleKeyDown}

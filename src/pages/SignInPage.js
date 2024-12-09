@@ -11,7 +11,7 @@ function SignInPage({ isMenuOpen, toggleMenu }) {
       <aside className={`aside-view ${isMenuOpen ? "slide-in" : "slide-out"}`}>
         <NavBar isMenuOpen={isMenuOpen} />
       </aside>
-      <main className={`main-view ${isMenuOpen ? "contract" : "expand"}`}>
+      <main className={`main-task-view ${isMenuOpen ? "contract" : "expand"}`}>
         <SignInCard />
       </main>
     </>

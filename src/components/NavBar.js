@@ -8,17 +8,15 @@ function NavBar({ isMenuOpen }) {
       aria-label="Main Navigation">
       <Link
         className={`nav-button ${useLocation().pathname === "/TodoDashboard" ? "active" : ""}`}
-        aria-label="Go to Todo Section"
         to="/TodoDashboard">
-        <img src="/icons/todo-icon.svg" className='nav-icon' alt="Todo icon"></img>
-        <span className='button-description'>Todo</span>
+        <img src="/icons/todo-icon.svg" className='nav-icon'></img>
+        <span className='nav-button-description'>Todo</span>
       </Link>
       <Link
         className={`nav-button ${useLocation().pathname === "/JournalDashboard" ? "active" : ""}`}
-        aria-label="Go to Journal Section"
         to="/JournalDashboard">
-        <img src="/icons/journal-icon.svg" className='nav-icon' alt="Journal icon"></img>
-        <span className='button-description'>Journal</span>
+        <img src="/icons/journal-icon.svg" className='nav-icon'></img>
+        <span className='nav-button-description'>Journal</span>
       </Link>
     </nav>
   )

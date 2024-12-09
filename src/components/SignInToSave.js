@@ -2,9 +2,9 @@ import '../styles/signInToSave.css'
 
 function SignInToSave() {
   return (
-    <div className="notice-container">
-      <img className="info-icon" src="icons/info-icon.svg"/>
-      <span className="notice">Sign in to save your work</span>
+    <div id="notice-container">
+      <img id="notice-icon" src="icons/info-icon.svg"/>
+      <span id="notice">Sign in to save your work</span>
     </div>
   )
 }

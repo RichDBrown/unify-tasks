@@ -1,17 +1,17 @@
-.todo-item {
+#todo-item-container {
   display: flex;
   align-items: top;
   justify-content: first baseline;
   padding: 0rem 0rem .25rem 0rem;
 }
 
-.checkbox {
+#todo-item-checkbox {
   height: 2.5rem;
   width: 2.5rem;
   margin-right: 1rem;
 }
 
-.text-input {
+#todo-item-input {
   width: calc(100% - 2rem);
   font-size: 1.75rem;
   border: none;

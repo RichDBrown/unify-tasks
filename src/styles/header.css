@@ -17,29 +17,7 @@
   align-items: center;
 }
 
-.header-button {
-  display: flex;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 2.5rem;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.15s;
-  border: none;
-  background: none;
-}
-
-.header-button:hover {
-  background-color: #dad9e0;
-}
-
-.header-icon {
-  height: 3rem;
-  width: 3rem;
-  cursor: pointer;
-}
-
-.logo-background {
+.app-title-container {
   display: flex;
   align-items: center;
   margin-left: 2rem;
@@ -48,17 +26,17 @@
   margin-right: 2rem;
 }
 
-.logo-background:active #app-name {
+.app-title-container:active .app-name {
   text-decoration: underline;
 }
 
-#logo {
+.app-logo {
   padding-right: 1rem;
   height: 3.75rem;
   width: 3.75rem;
 }
 
-#app-name {
+.app-name {
   font-size: 2rem;
   color: black;
 }
@@ -69,7 +47,7 @@
   justify-content: center;
 }
 
-.title {
+#task-title {
   flex: 1;
   height: 3.625rem;
   min-width: 35rem;
@@ -84,8 +62,8 @@
   color: black;
 }
 
-.title:hover,
-.title:focus {
+#task-title:hover,
+#task-title:focus {
   border: .125rem solid black;
   border-radius: .375rem;
 }
@@ -113,17 +91,17 @@
 }
 
 @media (max-width: 283px) {
-  .logo-background {
+  .app-title-container {
     display: none;
   }
 }
 
 @media (max-width: 499px) {
-  .title {
+  #task-title {
     display: none;
   }
 
-  .logo-background {
+  .app-title-container {
     margin-right: 0;
   }
 
@@ -134,7 +112,7 @@
 
 @media (min-width: 500px) and (max-width: 681px) {
 
-  #file-header-logo-background {
+  #task-app-title-container {
     display: none;
   }
 
@@ -144,15 +122,5 @@
 
   .left {
     margin-right: 5.400375rem;
-  }
-}
-
-@media (hover: none) {
-  .header-button:hover {
-    background-color: transparent;
-  }
-
-  .header-button:active {
-    background-color: #dad9e0;
   }
 }

@@ -1,4 +1,4 @@
-.notice-container {
+#notice-container {
   display: flex;
   position: fixed;
   align-items: center;
@@ -11,13 +11,13 @@
   bottom: 3rem;
 }
 
-.info-icon {
+#notice-icon {
   height: 2.5rem;
   width: 2.5rem;
   margin-right: .5rem;
 }
 
-.notice {
+#notice {
   color: #151b2c;
   font-size: 1.5rem;
   cursor: default;

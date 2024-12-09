@@ -13,8 +13,8 @@ function TodoDashboard({ isMenuOpen, toggleMenu }) {
       <aside className={`aside-view ${isMenuOpen ? "slide-in" : "slide-out"}`}>
         <NavBar isMenuOpen={isMenuOpen} />
       </aside>
-      <main className={`main-view-dashboard ${isMenuOpen ? "contract" : "expand"}`}>
-        <DashboardMainContent createCardDescription="Create Todo" linkToPage={"/TodoPage"} icon={'icons/todo-icon.svg'} />
+      <main className={`main-dashboard-view ${isMenuOpen ? "contract" : "expand"}`}>
+        <DashboardMainContent createCardDescription="Create Todo" linkToPage={"/TodoTaskView"} icon={'icons/todo-icon.svg'} />
       </main>
     </>
   )

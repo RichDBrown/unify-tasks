@@ -1,0 +1,31 @@
+.icon-button {
+  display: flex;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s;
+  border: none;
+  background: none;
+}
+
+.icon-button:hover {
+  background-color: #dad9e0;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+@media (hover: none) {
+  .icon-button:hover {
+    background-color: transparent;
+  }
+
+  .icon-button:active {
+    background-color: #dad9e0;
+  }
+}

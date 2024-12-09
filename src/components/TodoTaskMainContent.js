@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import TodoItem from "./TodoItem";
-import '../styles/todoMainContent.css'
+import '../styles/todoTaskMainContent.css'
 
-function TodoMainContent() {
+function TodoTaskMainContent() {
   const [tasks, setTasks] = useState([{ id: Date.now(), text: "", isChecked: false }])
   const taskRefs = useRef([])
 
@@ -43,7 +43,7 @@ function TodoMainContent() {
   }
 
   return (
-    <div className="todo-main-content">
+    <div id="todo-task-main-content">
       {tasks.map((task, index) => {
         if (!taskRefs.current[index]) {
           taskRefs.current[index] = React.createRef();
@@ -68,4 +68,4 @@ function TodoMainContent() {
   )
 }
 
-export default TodoMainContent;
+export default TodoTaskMainContent;
