@@ -1,29 +1,49 @@
 #sign-in-card {
+  flex: 1;
+  max-width: 50rem;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  border: .125rem solid black;
+  border: .125rem solid #757780;
+  border-radius: 1rem;
   padding: 2rem;
+  margin: 3rem;
 }
 
 .sign-in-card-title {
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin-bottom: 2rem;
 }
 
 .sign-in-input {
-  font-size: 1.75rem;
-  margin-bottom: .75rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
   border-radius: .375rem;
-  border: .125rem solid black;
+  border: .125rem solid #757780;
+  outline: none;
 }
 
-.sign-in-button {
-  margin-top: 1rem;
-  font-size: 1.75rem;
-  border-radius: .375rem;
-  border: .125rem solid black;
+.sign-in-input:focus {
+  border: .25rem solid #485d92;
+}
+
+.btn-primary {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  background-color: #485d92;
+  border: none;
+  transition: background-color 0.15s;
+}
+
+.btn-primary:hover {
+  background-color: #3e5180;
+}
+
+.btn-primary:active{
+  background-color: #394974 !important;
 }
 
 #sign-in-card-divider {
   margin: 2rem 0;
+  color: #757780;
 }

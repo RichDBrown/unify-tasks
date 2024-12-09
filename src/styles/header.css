@@ -64,7 +64,7 @@
 
 #task-title:hover,
 #task-title:focus {
-  border: .125rem solid black;
+  border: .125rem solid #757780;
   border-radius: .375rem;
 }
 

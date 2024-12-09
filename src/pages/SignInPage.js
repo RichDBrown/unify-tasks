@@ -1,6 +1,7 @@
 import DashboardHeader from '../components/DashboardHeader'
 import NavBar from "../components/NavBar"
 import SignInCard from '../components/SignInCard'
+import '../styles/signInPage.css'
 
 function SignInPage({ isMenuOpen, toggleMenu }) {
   return (
@@ -11,7 +12,7 @@ function SignInPage({ isMenuOpen, toggleMenu }) {
       <aside className={`aside-view ${isMenuOpen ? "slide-in" : "slide-out"}`}>
         <NavBar isMenuOpen={isMenuOpen} />
       </aside>
-      <main className={`main-task-view ${isMenuOpen ? "contract" : "expand"}`}>
+      <main className={`sign-in-page-view ${isMenuOpen ? "contract" : "expand"}`}>
         <SignInCard />
       </main>
     </>
